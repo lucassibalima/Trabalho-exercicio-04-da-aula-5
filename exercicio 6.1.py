@@ -2,8 +2,7 @@ def calcular_expressao(expr):
     try:
         # Substitui vírgula por ponto (caso o usuário use)
         expr = expr.replace(",", ".")
-
-        # Avalia a expressão com segurança limitada
+        
         resultado = eval(expr, {"__builtins__": None}, {})
 
         return resultado
